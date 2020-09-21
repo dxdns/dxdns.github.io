@@ -1,3 +1,13 @@
+.gist .blob-code, .gist .blob-num{
+    background: #000!important;
+    color: #fff!important;
+}
+.gist .gist-data{
+background-color: transparent!important;
+}
+.gist .gist-meta{
+background-color: transparent!important;
+}
 .nav-link {
     text-transform: uppercase;
 }
