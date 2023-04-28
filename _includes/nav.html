@@ -1,8 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!-- <symbol id="home" viewBox="0 0 16 16">
+        <path
+            d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+    </symbol>
+    <symbol id="grid" viewBox="0 0 16 16">
+        <path
+            d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+    </symbol> -->
+    <symbol id="folder" viewBox="0 0 16 16">
+        <path
+            d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
+    </symbol>
+</svg>
+
 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block text-bg-dark sidebar collapse">
     <div class="position-sticky pt-3 sidebar-sticky">
         <div class="d-flex justify-content-center">
             <a href="#" class="d-flex align-items-center text-white text-decoration-none">
-                <img src="https://dxdns.github.io/assets/images/logo50x50.png" alt="" width="32" height="32"
+                <img src="https://avatars.githubusercontent.com/u/37380674" alt="" width="128" height="128"
                     class="rounded-circle me-2">
                 <!-- <strong>dxdns</strong> -->
             </a>
@@ -11,20 +26,15 @@
 
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="/" class="nav-link active" aria-current="page">
+                {% for item in site.data.navigation %}
+                <a href="{{ item.link }}" {% if page.url==item.link %} class="nav-link text-white active" {% else %}
+                    class="nav-link text-white" {% endif %}>
                     <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#home" />
+                        <use xlink:href="#folder" />
                     </svg>
-                    Home
+                    {{ item.name }}
                 </a>
-            </li>
-            <li class="nav-item">
-                <a href="/portfolio" class="nav-link text-white">
-                    <svg class="bi pe-none me-2" width="16" height="16">
-                        <use xlink:href="#grid" />
-                    </svg>
-                    Portfolio
-                </a>
+                {% endfor %}
             </li>
         </ul>
     </div>
