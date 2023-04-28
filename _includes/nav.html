@@ -25,8 +25,9 @@
         <hr>
 
         <ul class="nav nav-pills flex-column mb-auto">
+
+            {% for item in site.data.navigation %}
             <li class="nav-item">
-                {% for item in site.data.navigation %}
                 <a href="{{ item.link }}" {% if page.url==item.link %} class="nav-link text-white active" {% else %}
                     class="nav-link text-white" {% endif %}>
                     <svg class="bi pe-none me-2" width="16" height="16">
@@ -34,8 +35,8 @@
                     </svg>
                     {{ item.name }}
                 </a>
-                {% endfor %}
             </li>
+            {% endfor %}
         </ul>
     </div>
 </nav>
