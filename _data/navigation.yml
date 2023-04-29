@@ -1,6 +1,7 @@
-- name: Home
+- name: Sobre
   link: /
-- name: Portfolio
+  # description: "Portfolio by dxdns: Diógenes Rodrigues | Software Engineer | Python | Go | React"
+- name: Portfólio
   link: /portfolio
 # - name: Blog
 #   link: /blog
