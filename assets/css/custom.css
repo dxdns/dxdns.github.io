@@ -1,10 +1,16 @@
 /* body {
   background-color: #000000cc;
 } */
+/* .sidebar-content {
+  width: 30%;
+  background-color: #2b3035;
+} */
+
 .card {
   background-color: rgba(128, 128, 128, 0.296);
   transition: all 0.5s;
 }
+
 .card:hover {
   background-color: rgb(47, 47, 47);
 }
