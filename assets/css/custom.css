@@ -7,12 +7,12 @@
 } */
 
 .card {
-  background-color: rgba(128, 128, 128, 0.296);
+  background-color: rgba(57, 57, 57, 0.296);
   transition: all 0.5s;
 }
 
 .card:hover {
-  background-color: rgb(47, 47, 47);
+  background-color: rgba(128, 128, 128, 0.296);
 }
 
 main>.container {
