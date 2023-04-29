@@ -43,12 +43,14 @@
   {% include nav-mobile.html %}
 
   <div class="container-fluid">
-    <div class="row">
-      {% include nav.html %}
+    <div class="row flex-wrap flex-md-nowrap">
+      <aside class="col-md-3 col-lg-2 me-3">
+        {% include sidebar.html %}
+      </aside>
 
-      <main class="flex-shrink-0 col-md-9 ms-sm-auto col-lg-9 px-md-4 mb-4">
+      <main role="main" class="flex-shrink-0 col-md-9 ms-sm-auto col-lg-9 px-md-4 mb-5">
         <div class="container">
-          <section class="post">
+          <section class="post mb-5">
             <article class="post-content post-content--intro">
               {{ content }}
             </article>
@@ -57,7 +59,7 @@
       </main>
     </div>
   </div>
-
+  
   {% include footer.html %}
 
   <script src="/assets/js/bootstrap.bundle.min.js"></script>
