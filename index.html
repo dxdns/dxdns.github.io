@@ -1,7 +1,7 @@
 ---
 layout: default
-title: About
-subtitle: About
+title: Diógenes Rodrigues
+subtitle: Desenvolvedor de software
 description: Diógenes Rodrigues | Software Engineer | Python | Go | React
 type: page
 permalink: /
@@ -9,13 +9,13 @@ permalink: /
 <div>
     <header
         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="title">Diógenes Rodrigues</h1>
+        <h1 class="title">{{ page.title }}</h1>
     </header>
-    <p class="subtitle">Desenvolvedor de software</p>
+    <p class="subtitle">{{ page.subtitle }}</p>
 
     <p class="lead">
     <h2 class="mt-5">Sobre</h2>
-    <p>Olá, bem vindo ao meu site! Meu nome é Diógenes Rodrigues e sou desenvolvedor. Adoro escrever código que faz
+    <p>Olá, bem vindo ao meu site! Meu nome é {{ page.title }} e sou desenvolvedor. Adoro escrever código que faz
         alguma coisa, e <strong>faz bem</strong>. Meu
         compromisso com
         a qualidade me ajudou a entregar soluções que atendem aos requisitos

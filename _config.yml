@@ -20,8 +20,7 @@
 
 title: dxdns
 email: dxdns@icloud.com
-description: >- # this means to ignore newlines until "baseurl:"
-  test description.
+description: Diógenes Rodrigues | Software Engineer | Python | Go | React
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dxdns.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
