@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100" data-bs-theme="dark">
+<html lang="pt_BR" class="h-100" data-bs-theme="dark">
 
 <head>
   <!--analytics-->
@@ -14,7 +14,9 @@
     {{ page.title }} - {{ site.title }}
   </title>
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta name="generator" content="0.0.1">
   <meta name="description" content="{{ page.description }}">
+  <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:title" content="{{ page.title }}">
@@ -35,10 +37,10 @@
   <link href="/assets/css/custom.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 bg-body-tertiary">
   {% include nav-mobile.html %}
 
-  <div class="container shadow p-3 mb-5 rounded">
+  <div class="container shadow p-3 mb-5 rounded bg-dark bg-gradient">
     <div class="container-fluid">
       <div class="row flex-wrap flex-md-nowrap">
         <aside class="col-md-2 col-lg-2 me-3">
