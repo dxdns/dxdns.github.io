@@ -22,7 +22,7 @@ title: dxdns
 email: dxdns@icloud.com
 description: Diógenes Rodrigues | Software Engineer | Python | Go | React
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dxdns.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dxdns.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  dxdns
 
