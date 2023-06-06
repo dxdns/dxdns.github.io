@@ -6,20 +6,12 @@ description: Artigos sobre tecnologia.
 type: page
 permalink: /blog
 ---
-
-<section class="post">
-  <header class="page-header">
-    <h2 class="page-header__title">{{ page.title }}</h2>
-    <h3 class="page-header__subtitle">{{ page.subtitle }}</h3>
-  </header>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <h4><a class="post-card" href="{{ post.url }}">{{ post.title }}</a></h4>
-        <time class="post-card__date">{{ post.date | date_to_string }}</time>
-        {{ post.excerpt }}
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <h4><a class="post-card" href="{{ post.url }}">{{ post.title }}</a></h4>
+    <time class="post-card__date">{{ post.date | date_to_string }}</time>
+    {{ post.excerpt }}
+  </li>
+  {% endfor %}
+</ul>
