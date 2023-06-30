@@ -161,13 +161,13 @@ main>.container {
 
 .bi {
   vertical-align: -.125em;
-  fill: currentColor;
+  /* fill: currentColor; */
   transition: all 0.5s;
   opacity: 0.5;
 }
 
 .bi:hover {
-  color: white;
+  color: gray;
   opacity: 1;
 }
 
@@ -446,9 +446,9 @@ main>.container {
   }
 }
 
-.post-content strong {
+/* .post-content strong {
   color: #fff
-}
+} */
 
 .post-content .video {
   position: relative;
@@ -464,12 +464,12 @@ main>.container {
   height: 100%
 }
 
-.post-content blockquote p,
+/* .post-content blockquote p,
 .post-content h3 {
   font-size: 1.5rem;
   line-height: 1.2;
   color: #fff
-}
+} */
 
 @media (min-width:834px) {
 
