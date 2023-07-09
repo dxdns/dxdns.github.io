@@ -2,22 +2,22 @@
 
 :root {
   --blue: #0e0620;
-  --white: #fff;
+  --white: #f3f3f3;
   --green: #2ccf6d;
+  --black: #111;
+  --bs-link-hover-color: #000f40;
 }
 
 html,
-body {
-  height: 100%;
-}
 
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Nunito Sans";
-  /* color: var(--blue); */
-  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+  /* font-size: 1em; */
+  background-color: var(--black);
 }
 
 button {
@@ -48,7 +48,7 @@ h2 {
 .btn {
   z-index: 1;
   overflow: hidden;
-  background: transparent;
+  background: #495057;
   position: relative;
   padding: 8px 50px;
   border-radius: 30px;
@@ -58,33 +58,13 @@ h2 {
   transition: 0.2s ease;
   font-weight: bold;
   margin: 5px 0px;
+  text-decoration: none;
+  color: #f1f1f1;
+  transition: all 0.7s;
 }
 
-.btn.green {
-  border: 4px solid var(--green);
-  color: var(--blue);
-}
-
-.btn.green:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0%;
-  height: 100%;
-  background: var(--green);
-  z-index: -1;
-  transition: 0.2s ease;
-}
-
-.btn.green:hover {
-  color: var(--white);
-  background: var(--green);
-  transition: 0.2s ease;
-}
-
-.btn.green:hover:before {
-  width: 100%;
+.btn:hover {
+  background-color: var(--bs-link-hover-color);
 }
 
 @media screen and (max-width: 768px) {
@@ -93,7 +73,29 @@ h2 {
   }
 
   .container {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    flex-direction: column !important;
   }
+
+  .content {
+    padding: 1rem;
+  }
+
+}
+
+.container {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.container img {
+  width: 50%;
+  filter: invert(0.30);
+}
+
+.content p {
+  margin-bottom: 2rem;
 }
