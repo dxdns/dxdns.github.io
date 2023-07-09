@@ -87,6 +87,14 @@
   transition: all 0.7s;
 }
 
+@media (max-width: 768px) {
+  .social-icons .social-icon {
+    height: 2rem !important;
+    width: 2rem !important;
+    font-size: 1rem !important;
+  }
+}
+
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
