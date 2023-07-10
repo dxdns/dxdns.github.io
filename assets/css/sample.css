@@ -33,22 +33,12 @@ body {
   font-weight: 700;
   text-decoration: none;
   transition: all 0.7s;
+  padding: 1rem;
 }
 
 .links a:hover {
   /* background-color: #444; */
   color: var(--bs-link-hover-color);
-}
-
-@media screen and (max-width: 768px) {
-  .links {
-    flex-direction: column !important;
-    gap: 0 !important;
-  }
-
-  .links li {
-    padding: 0.5rem !important;
-  }
 }
 
 /* Container */
@@ -111,4 +101,28 @@ body {
 
 .logo:hover {
   filter: invert(0.50);
+}
+
+@media screen and (max-width: 375px) {
+  .links {
+    flex-direction: column !important;
+    gap: 0 !important;
+    align-items: normal !important;
+  }
+
+  .links li {
+    padding: 0.1rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  .links li {
+    padding: 0.1rem !important;
+    margin-top: 1rem !important;
+  }
 }

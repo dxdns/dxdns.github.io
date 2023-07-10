@@ -69,6 +69,8 @@
   position: relative;
   border-radius: 100%;
   margin-bottom: 10px;
+  width: 70%;
+  height: 70%;
 }
 
 /* Social */
@@ -85,14 +87,6 @@
   font-size: 1.5rem;
   margin-right: 0.5rem;
   transition: all 0.7s;
-}
-
-@media (max-width: 768px) {
-  .social-icons .social-icon {
-    height: 2rem !important;
-    width: 2rem !important;
-    font-size: 1rem !important;
-  }
 }
 
 .social-icons .social-icon:last-child {
@@ -113,21 +107,6 @@
   margin-right: auto;
   border-top: 1px solid rgba(var(--color-primary-contrast-rgb), 0.1);
   text-align: center;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    width: calc(100% - 80px);
-    margin-top: 40px;
-    padding: 40px 0;
-  }
-}
-
-@media (min-width: 1280px) {
-  .footer {
-    margin-top: 48px;
-    padding: 48px 0;
-  }
 }
 
 /* Links */
@@ -155,18 +134,6 @@
   margin-right: 16px;
 }
 
-@media (min-width: 768px) {
-  .links>a:not(:last-child) {
-    margin-right: 24px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .links>a:not(:last-child) {
-    margin-right: 32px;
-  }
-}
-
 /* Copy */
 .copy {
   margin-top: 16px;
@@ -178,20 +145,6 @@
   align-items: center;
   flex-direction: row;
   gap: 5px;
-}
-
-@media (min-width: 768px) {
-  .copy {
-    margin-top: 24px;
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .copy {
-    margin-top: 32px;
-    font-size: 18px;
-  }
 }
 
 /* Logo */
@@ -231,4 +184,55 @@
 
 .card a:hover {
   color: rgb(26, 85, 195);
+}
+
+/* @media (max-width: 375px) {
+  .profile {
+    width: 100% !important;
+    height: 100% !important;
+  }
+} */
+
+@media (max-width: 768px) {
+  .social-icons .social-icon {
+    height: 2rem !important;
+    width: 2rem !important;
+    font-size: 1rem !important;
+  }
+
+  /* .profile {
+    width: 50% !important;
+    height: 50% !important;
+  } */
+
+  .footer {
+    width: calc(100% - 80px);
+    margin-top: 40px;
+    padding: 40px 0;
+  }
+
+  .links>a:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .copy {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .links>a:not(:last-child) {
+    margin-right: 32px;
+  }
+
+  .footer {
+    margin-top: 48px;
+    padding: 48px 0;
+  }
+
+  .copy {
+    margin-top: 32px;
+    font-size: 18px;
+  }
 }
