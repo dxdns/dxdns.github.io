@@ -1,7 +1,11 @@
 - name: Sobre
   link: /
-  # description: "Portfolio by dxdns: Diógenes Rodrigues | Software Engineer | Python | Go | React"
+
+- name: Contato
+  link: mailto:dxdns@hotmail.com
+
 - name: Portfólio
   link: /portfolio
+
 # - name: Blog
 #   link: /blog

@@ -1,70 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100" data-bs-theme="dark">
+<html lang="pt-br">
 
 <head>
-  <!--analytics-->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WGFWQ943XE"></script>
-  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-WGFWQ943XE');</script>
-  <!--end analytics-->
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    {% if page.url == "/" %}
-    Diógenes Rodrigues - dxdns
-    {% else %}
-    {{ page.title }} - dxdns
-    {% endif %}
-  </title>
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-  <meta name="description" content="{{ page.description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:image" content="assets/images/logo800x800.png">
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-  <meta property="twitter:title" content="{{ page.title }}">
-  <meta property="twitter:description" content="{{ page.description }}">
-  <meta property="twitter:image" content="/assets/images/logo800x800.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logo.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon16x16.png">
-  <meta name="msapplication-TileColor" content="#121214">
-  <meta name="theme-color" content="#1c1e1f">
-
-  <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/css/custom.css" rel="stylesheet">
+	{% include head.html %}
+    <link rel="stylesheet" href="/assets/css/globals.css">
+    <link href="/assets/css/default.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column h-100">
-  {% include nav-mobile.html %}
-
-  <div class="container-fluid">
-    <div class="row flex-wrap flex-md-nowrap">
-      <aside class="col-md-2 col-lg-2 me-3">
-        {% include sidebar.html %}
-      </aside>
-
-      <main role="main" class="flex-shrink-0 col-md-9 ms-sm-auto col-lg-9 px-md-4 mb-5 rounded-2">
-        <div class="container">
-          <section class="post mb-5">
-            <article class="post-content post-content--intro">
-              {{ content }}
-            </article>
-          </section>
+<body>
+    <div class="container">
+        <main role="main" class="content">
+            {{ content }}
+        </main>
+        
+        <div class="social-icons">
+            {% include social.html %}
         </div>
-      </main>
     </div>
-  </div>
 
-  <footer class="footer mt-auto py-2 bg-body-tertiary">
-    {% include footer.html %}
-  </footer>
-
-  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/custom.js"></script>
 </body>
 
 </html>
