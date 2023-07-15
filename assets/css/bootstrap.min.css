@@ -3790,6 +3790,7 @@ textarea.form-control-lg {
 .navbar-nav .show > .nav-link,
 .navbar-nav .nav-link.active {
   color: var(--bs-navbar-active-color);
+  /* background-color: var(--bs-navbar-hover-color); */
 }
 .navbar-nav .dropdown-menu {
   position: static;
