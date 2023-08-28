@@ -81,6 +81,23 @@ body {
   background-color: transparent !important;
 }
 
+.gist .markdown-body h1 {
+  color: white;
+}
+
+.gist .markdown-body h5 {
+  color: white;
+}
+
+.gist .markdown-body ul, .gist .markdown-body ol {
+  color: white;
+}
+
+.gist .markdown-body .highlight pre, .gist .markdown-body pre {
+  color: wheat !important;
+  background-color: transparent !important;
+}
+
 /* Footer */
 .footer {
   margin-top: 2rem;
