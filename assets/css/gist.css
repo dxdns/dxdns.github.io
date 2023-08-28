@@ -7,36 +7,10 @@
 .gist {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
-/* Mobile View */
-@media screen and (min-width:250px) and (max-width:480px) {
-    .gist {
-        grid-template-columns: repeat(1, 1fr) !important;
-    }
-}
-
-/* Tablet View */
-@media screen and (min-width:481px) and (max-width:768px) {
-    .gist {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
-
-/* Laptop View */
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .gist {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .gist {
-        grid-template-columns: repeat(3, 1fr) !important;
-    }
 }
 
 .gist .gist-file {
@@ -45,8 +19,8 @@
     border: 1px solid #333 !important;
     /* border-bottom: 1px solid #333 !important; */
     border-radius: 6px;
-    max-width: 400px;
-    width: 100%;
+    max-width: 400px !important;
+    /* width: 100%; */
     background-color: #2222227a !important;
 }
 
@@ -100,10 +74,7 @@
     background-color: #272727 !important;
 }
 
-/* .gist .markdown-body ul, .gist .markdown-body ol {
-    font-size: 14px !important;
-} */
-
+/* Scrollbar */
 .gist pre::-webkit-scrollbar {
     width: 12px !important;
 }
