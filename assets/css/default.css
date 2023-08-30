@@ -92,21 +92,7 @@
 }
 
 @media (max-width: 768px) {
-  .social-icons .social-icon {
-    height: 2rem !important;
-    width: 2rem !important;
-    font-size: 1rem !important;
-  }
-
-  .copy {
-    margin-top: 24px;
-    font-size: 16px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .copy {
-    margin-top: 32px;
-    font-size: 18px;
+  h1 {
+    font-size: 1.5em;
   }
 }
