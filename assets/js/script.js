@@ -2,11 +2,11 @@ var closeModalBtn = document.getElementById("closeModalBtn")
 var modal = document.getElementById("myModal")
 var modalPreference = localStorage.getItem("modalPreference")
 
-if (modalPreference !== "closed") {
-    modal.style.display = "block"
-} else {
-    modal.style.display = "none"
-}
+// if (modalPreference !== "closed") {
+//     modal.style.display = "block"
+// } else {
+//     modal.style.display = "none"
+// }
 
 var countdown = 10
 
